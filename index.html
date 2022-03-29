@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>미니 인증과 인가</title>
-</head>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
 
-<body>
+  <body>
     <div id="app">
-        <h1>미니 인증과 인가</h1>
+      <h1>미니 인증과 인가</h1>
+      <div id="no-login">
         <a href="/login.html">
-            <button>로그인</button>
+          <button>로그인</button>
         </a>
         <a href="/signup.html">
-            <button>회원가입</button>
+          <button>회원가입</button>
         </a>
+      </div>
+      <div id="ok-login" class="hide">
+        <a href="/user.html">
+          <button>회원 정보</button>
+        </a>
+        <button id="logout-button">로그아웃</button>
+        <p>👋🏼<span id="login-user-name"></span>님 안녕하세요</p>
+      </div>
     </div>
     <script type="module" src="./src/index.js"></script>
-</body>
-
+  </body>
 </html>

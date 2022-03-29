@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "monster@gmail.com",
+      "password": "$2a$10$SzI5vejrwm4hLPODLz/uZuyC38oVnPLViwWm5KeUCvZvsUHboJ8mu",
+      "id": 1
+    },
+    {
+      "email": "abc@naver.com",
+      "password": "$2a$10$GistAxbTDKVl/2gnHQgdQuQ8tHEL2hKN3kHvCvjWW3BlXzE/F.WUK",
+      "id": 2
+    },
+    {
+      "email": "ab2c@naver.com",
+      "password": "$2a$10$6NrIwNLnqnR1ErpiehILBOJ3MW9PIouls9VdeZoBE4gRWl9tYusO.",
+      "id": "하리"
+    }
+  ]
+}

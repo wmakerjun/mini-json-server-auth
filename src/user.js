@@ -9,6 +9,7 @@ const renderUpdatedUserInfo = response => {
   console.log(response);
   const name = response.name;
   document.getElementById("name").textContent = name;
+  document.getElementById("welcome-name").textContent = name;
   const email = response.email;
   document.getElementById("email").textContent = email;
 };
@@ -30,3 +31,10 @@ fetch(url, {
   })
   .then(response => renderUpdatedUserInfo(response))
   .catch(error => console.error("에러", error));
+
+const logout = () => {
+  localStorage.removeItem("userAuth");
+  location.replace("../index.html");
+};
+
+document.getElementById("logout-button").addEventListener("click", logout);

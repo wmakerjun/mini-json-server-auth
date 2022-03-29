@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원정보</title>
-</head>
+  </head>
 
-<body>
-    <div>
-        <h1>회원정보</h1>
-        <h3>이름</h3>
-        <p>준</p>
-        <h3>이메일</h3>
-        <p>imakerjun@gmail.com</p>
+  <body>
+    <button id="회원정보-버튼">회원정보</button>
+    <button type="button">회원정보 수정</button>
+    <button id="로그아웃" type="button">로그아웃</button>
+    <br />
+    <br />
+    <div>👋🏼 <span id="이름"></span>님 안녕하세요</div>
+    <div id="회원정보" hidden>
+      <h1>회원정보</h1>
+      <h3>이름</h3>
+      <p id="회원정보-이름"></p>
+      <h3>이메일</h3>
+      <p id="회원정보-이메일"></p>
     </div>
-</body>
-
+    <script src="src/user.js"></script>
+  </body>
 </html>

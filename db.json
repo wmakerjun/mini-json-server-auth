@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "abc@naver.com",
+      "password": "$2a$10$t86QQXcke15DUYLPsK6uE.8izoG1cXAfKZAN0tMRkSPLa6DXDmuqe",
+      "name": "하리",
+      "id": 1
+    },
+    {
+      "email": "abcd@naver.com",
+      "password": "$2a$10$pGuqaDrnyDKxCGRAajoFb.FWpD7KwGmuuw365NCPTjoA8WvkfXhKK",
+      "name": "하리2",
+      "id": 2
+    }
+  ]
+}

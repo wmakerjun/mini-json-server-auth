@@ -26,9 +26,11 @@ const signup = event => {
       return res.json();
     })
     .then(response => {
-      // console.log("성공", JSON.stringify(response));
-      const userAuth = JSON.stringify(response);
-      localStorage.setItem("userAuth", userAuth);
+      const userAuth = {
+        accessToken: response.accessToken,
+        id: response.user.id,
+      };
+      localStorage.setItem("userAuth", JSON.stringify(userAuth));
       location.replace("../user.html");
     })
     .catch(error => console.error("에러", error));

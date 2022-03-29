@@ -129,6 +129,30 @@
       "password": "$2a$10$pU39akR1dshZXv4n3kIO9OH33tIRPol/ngk77kRr2zEJKiGhnYAZW",
       "name": "asdfasdfasdf",
       "id": 22
+    },
+    {
+      "email": "dsafasdf@asdf.com",
+      "password": "$2a$10$/APLTzB0e9YfjwfSu7Af2.u3a3XB8N/qZmC6gHOESn9U/j6T72ndi",
+      "name": "동키콩",
+      "id": 23
+    },
+    {
+      "email": "sdafasdf@adfs.com",
+      "password": "$2a$10$db9omozVplSCYs.HXJU5M.gYw3REhGxi2EDZQcKAqPsWV3Ez8Uwri",
+      "name": "소피아",
+      "id": 24
+    },
+    {
+      "email": "asdfasdf@adfs.com",
+      "password": "$2a$10$rhDcBQVAr9RGD74hvlGGqutbheY3negrLwfJY8PC5nq7V84YhTECC",
+      "name": "asdfasdfasd",
+      "id": 25
+    },
+    {
+      "email": "asdfasdf@adsf.com",
+      "password": "$2a$10$BOGJZmiiMELU1pG5vsKRCeUUTtJO2waCxsJ26AsAkqByftYLgPD..",
+      "name": "asdfasdf",
+      "id": 26
     }
   ]
 }

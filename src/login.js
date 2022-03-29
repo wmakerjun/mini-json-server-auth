@@ -12,8 +12,6 @@ function 로그인(e) {
     password: 비밀번호값,
   };
 
-  console.log(이메일값, 비밀번호값);
-
   fetch('http://localhost:3000/login', {
     method: 'POST',
     body: JSON.stringify(사용자데이터),
@@ -22,7 +20,15 @@ function 로그인(e) {
     },
   }).then((res) => {
     if (res.ok) {
-      location = '/index.html';
+      res.json().then((data) => {
+        const 액세스토큰 = data.accessToken;
+        const 유저정보 = data.user;
+
+        sessionStorage.setItem('액세스토큰', 액세스토큰);
+        sessionStorage.setItem('유저정보', JSON.stringify(유저정보));
+
+        location = '/user.html';
+      });
     }
   });
 }

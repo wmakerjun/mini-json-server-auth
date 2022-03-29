@@ -153,6 +153,18 @@
       "password": "$2a$10$BOGJZmiiMELU1pG5vsKRCeUUTtJO2waCxsJ26AsAkqByftYLgPD..",
       "name": "asdfasdf",
       "id": 26
+    },
+    {
+      "email": "marco@naver.com",
+      "password": "$2a$10$O6xSZrdD.g8XFAH684P2wu.bKvVfiwMQ6WAKSffXqfoo1cfCpOJ4S",
+      "name": "마르코",
+      "id": 27
+    },
+    {
+      "email": "sophia@naver.com",
+      "password": "$2a$10$wlpRgr4XKy2c2AsHq2/TL.aoUj4oEQRO/If72Q.9B9A2xlXwsvqy.",
+      "name": "소피아",
+      "id": 28
     }
   ]
 }

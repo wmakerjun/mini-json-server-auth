@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "email": "dd@dd.dd",
+      "password": "$2a$10$mIhaE/TAcOqwJEE/Cok/6eopbjqPpyh.gRQ278.zqtDQ66u7Caysq",
+      "id": 1
+    },
+    {
+      "email": "email@email",
+      "password": "$2a$10$fNUJ/UieGw0wcUd8//jP2.3ivs7.KQpkGd7v.L6w2DuLJGXl.60A6",
+      "id": 2
+    },
+    {
+      "email": "si1129@naver.com",
+      "password": "$2a$10$KQpDuUDwTI5s7cnBDZIS6OExYI4/pQC5elS.e8YRSGBb6kRWgAID2",
+      "id": 3
+    },
+    {
+      "email": "wnsgur8397@naver.com",
+      "password": "$2a$10$r81eHbpB90qvWbgE/bPxsuJPl2x9z1ZrWwPjkntA.2xilpSAEjLOm",
+      "id": 4
+    },
+    {
+      "email": "test@test.t",
+      "password": "$2a$10$O1RvSwdpSl6Z/qPdd6SylusEWKIx.2NLm8DAdRxWZJwTGUf7.Ucua",
+      "id": 5
+    },
+    {
+      "email": "sion@gmail.com",
+      "password": "$2a$10$hJGGtF/NPGLv2CqiJQH7SeP5Q9eHfUSFWQ86ySq494Cam66OnkR5.",
+      "id": 6
+    },
+    {
+      "email": "tess@test.t",
+      "password": "$2a$10$5kqeMXHDUxULykqrA895pOv5UMCyF9e5AYmLPhqSRRhPRGA8pM5Ce",
+      "name": "tess",
+      "id": 7
+    },
+    {
+      "email": "wnsgur8397@daum.net",
+      "password": "$2a$10$PjrvansdfuUDB3.tfjTclu4CNqT3FJ4wHrTezTEHnXVJf/oRAax8a",
+      "name": "장준혁",
+      "id": 8
+    },
+    {
+      "email": "test@test",
+      "password": "$2a$10$5/lv.FG2MRypaiNBFttcteaN.ueG3jGfTXQVBOKZTd0OwpvCJXwae",
+      "name": "test",
+      "id": 9
+    }
+  ]
+}

@@ -8,16 +8,40 @@
 </head>
 
 <body>
-    <div>
-        <h1>로그인</h1>
-        <form>
-            <label>이메일</label>
-            <input type="email" />
-            <label>비밀번호</label>
-            <input type="password" />
-            <button type="submit">로그인</button>
-        </form>
-    </div>
+  <div>
+    <h1>로그인</h1>
+    <form>
+      <label>이메일</label>
+      <input name="email" type="email" />
+      <label>비밀번호</label>
+      <input name="password" type="password" />
+      <button type="submit">로그인</button>
+    </form>
+  </div>
+  <script>
+    const $form = document.querySelector('form');
+    $form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const { email, password } = e.target;
+      fetch('http://localhost:9000/login', {
+        method: 'post',
+        headers:{
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email.value,
+          password: password.value
+        })
+      }).then((response) => response.json()).then(body => {
+        const { accessToken, user } = body;
+        localStorage.setItem('accessToken', accessToken);
+        localStorage.setItem('userInfo', JSON.stringify(user));
+        location.href = location.origin;
+      }).catch(err => {
+        console.error(err);
+      });
+    });
+  </script>
 </body>
 
 </html>

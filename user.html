@@ -2,19 +2,61 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원정보</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보</title>
 </head>
 
 <body>
-    <div>
-        <h1>회원정보</h1>
-        <h3>이름</h3>
-        <p>준</p>
-        <h3>이메일</h3>
-        <p>imakerjun@gmail.com</p>
-    </div>
+  <div id="app">
+    <h2>회원정보 불러오는중...</h2>
+  </div>
+
+  <script>
+    const $app = document.querySelector('#app');
+
+    const template = (name, email) => `
+      <h1>회원정보</h1>
+      <h3>이름</h3>
+      <p>${name}</p>
+      <h3>이메일</h3>
+      <p>${email}</p>
+    `;
+
+    const accessToken = localStorage.getItem('accessToken');
+    const isLoggedIn = !!accessToken;
+    const handleError = (err) => {
+      alert('올바르지 않은 접근입니다');
+      localStorage.clear();
+      location.href = location.origin;
+      if (err) console.error(err);
+    }
+    if (isLoggedIn) {
+      const userInfo = JSON.parse(localStorage.getItem('userInfo') || null);
+      if (userInfo?.id) {
+        fetch(`http://localhost:9000/users/${userInfo.id}`, {
+          method: 'get',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${accessToken}`,
+          },
+        }).then(async (response) => {
+          const { ok } = response;
+          const body = await response.json();
+          if (!ok) throw new Error(body);
+
+          const { name, email } = body;
+          $app.innerHTML = template(name, email);
+        }).catch(err => {
+          handleError(err);
+        });
+      } else {
+        handleError();
+      }
+    } else {
+      location.href = `${location.origin}/login.html`;
+    }
+  </script>
 </body>
 
 </html>

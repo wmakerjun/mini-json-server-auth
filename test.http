@@ -1,0 +1,8 @@
+GET http://localhost:9000 HTTP/1.1
+content-type: application/json
+
+{
+  "name": "sample",
+  "email": "woowahan@gmail.com",
+  "password": "123456",
+}

@@ -5,17 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>미니 인증과 인가</title>
+    <style>
+        .app a {
+            display: none;
+        }
+
+        .app.login .login-button,
+        .app.default .default-button {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" class="app default">
         <h1>미니 인증과 인가</h1>
-        <a href="/login.html">
+        <a href="/login.html" class="default-button">
             <button>로그인</button>
         </a>
-        <a href="/signup.html">
+        <a href="/signup.html"  class="default-button">
             <button>회원가입</button>
         </a>
+        
+        <a href="/user.html" class="login-button">
+            <button>회원정보</button>
+        </a>
+        <a id="logout-button" class="login-button">
+            <button>로그아웃</button>
+        </a>
+        
+        <p id="greeting-message"></p>
     </div>
     <script type="module" src="./src/index.js"></script>
 </body>
